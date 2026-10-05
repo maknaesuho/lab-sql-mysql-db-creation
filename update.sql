@@ -10,9 +10,7 @@ INSERT INTO emails (name, email)
 VALUES ('Pablo Picasso', 'ppicasso@gmail.com'),
 	('Abraham Lincoln', 'lincoln@us.gov'),
     ('Napoléon Bonaparte', 'hello@napoleon.me');
-    
-ALTER TABLE customers
-ADD FOREIGN KEY (name) REFERENCES emails (name);
+
 
 SET SQL_SAFE_UPDATES = 0;
 

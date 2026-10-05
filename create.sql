@@ -14,10 +14,10 @@ CREATE TABLE `cars` (
 DROP TABLE IF EXISTS customers;
 CREATE TABLE `customers` (
 	customer INT AUTO_INCREMENT PRIMARY KEY,
-	`customer_id` INT,
+	`customer_id` VARCHAR(255),
 	`name` VARCHAR(255),
 	`phone_number` VARCHAR(255),
-	`email` VARCHAR(255),
+	`email` VARCHAR(255),ye
 	`address` VARCHAR(255),
 	`city` VARCHAR(255),
 	`state` VARCHAR(255),
@@ -28,7 +28,7 @@ CREATE TABLE `customers` (
 DROP TABLE IF EXISTS salespersons;
 CREATE TABLE `salespersons` (
 	salesperson INT AUTO_INCREMENT PRIMARY KEY,
-	`staff_id` INT,
+	`staff_id` VARCHAR(255),
 	`name` VARCHAR(255),
 	`store` VARCHAR(255)
 );
@@ -36,11 +36,11 @@ CREATE TABLE `salespersons` (
 DROP TABLE IF EXISTS invoices;
 CREATE TABLE `invoices` (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-	`invoice_num` INT,
+	`invoice_num` VARCHAR(255),
 	`date` DATE,
-	`car` INT,
-	`customer` INT,
-	`salesperson` INT
+	`car` VARCHAR(255),
+	`customer` VARCHAR(255),
+	`salesperson` VARCHAR(255)
 );
 
 
