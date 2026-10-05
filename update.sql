@@ -1,4 +1,5 @@
 USE lab_mysql;
+SET SQL_SAFE_UPDATES = 0;
 
 UPDATE customers
 SET email = 'ppicasso@gmail.com'
@@ -12,4 +13,4 @@ UPDATE customers
 SET email = 'hello@napoleon.me'
 WHERE name = 'Napoléon Bonaparte';
 
-SET SQL_SAFE_UPDATES = 0;
+
